@@ -10,9 +10,6 @@ def greet(name, template="Hello, <name>!"):
     return template.format(name=name)
 
 
-print(greet("Anne", "how's it hanging, <name>?"))
-
-
 def force(mass, body="earth"):
     gravity = {
         "sun": 274,
@@ -30,15 +27,7 @@ def force(mass, body="earth"):
     return round(mass * gravity[body], 1)
 
 
-print(force(3.14))
-
-
 def pull(m1, m2, d):
     G = 0.00000000006674
-    print(G)
     F = G * ((m1 * m2) / d ** 2)
-    print(round(F, 10))
-    return FP
-
-
-print(pull(800, 1500, 3))
+    return F
